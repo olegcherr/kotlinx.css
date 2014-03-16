@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="kotlinx.css:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/kotlinx_css_jar</output-path>
+    <root id="archive" name="kotlinx.css.jar">
+      <element id="module-output" name="kotlinx.css" />
+    </root>
+  </artifact>
+</component>
