@@ -1,9 +1,9 @@
-package kotlinx.css.tests
+package kotlinx.css.test
 
 import kotlinx.css.*
 import org.junit.*
 import kotlin.test.*
-import org.spek.*
+import org.jetbrains.spek.api.*
 
 fun renderCSS(body: StyleContainer.() -> Unit): String {
     val style = StyleContainer()
