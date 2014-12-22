@@ -15,7 +15,7 @@ fun Style.placeholder() {
     property("a", "b")
 }
 
-class CssBuilderSpek() : Spek() {{
+class TestCssBuilder() : Spek() {{
     given("css builder") {
 
         on("using tag") {
