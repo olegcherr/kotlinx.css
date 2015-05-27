@@ -4,10 +4,10 @@ import java.text.DecimalFormat
 
 
 enum class LinearUnits(val value: String) {
-    percent : LinearUnits("%")
-    em : LinearUnits("em")
-    px : LinearUnits("px")
-    auto: LinearUnits("auto")
+    percent("%"),
+    em("em"),
+    px("px"),
+    auto("auto");
     override fun toString(): String {
         return value
     }
@@ -16,7 +16,7 @@ enum class LinearUnits(val value: String) {
 /** Represents a single linear dimension.
  */
 class LinearDimension(var value: Double, var units: LinearUnits) {
-    class object {
+    companion object {
         /** Creates a linear dimension from a string literal */
         fun fromString(s: String): LinearDimension {
             if (s.endsWith("em"))

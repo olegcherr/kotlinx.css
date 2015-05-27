@@ -118,9 +118,9 @@ fun Style.select(state: String): Style {
 }
 
 enum class AttributeOperation {
-    equals
-    contains
-    startsWith
+    equals,
+    contains,
+    startsWith,
     endsWith
 }
 
