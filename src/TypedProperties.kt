@@ -30,7 +30,7 @@ fun Style.border_radius(radius: LinearDimension): Unit {
 }
 
 fun Style.shadow(vararg shadows: String): Unit {
-    val value = shadows.makeString(", ")
+    val value = shadows.joinToString(", ")
     property("box-shadow", value)
     property("-moz-box-shadow", value)
     property("-webkit-box-shadow", value)
